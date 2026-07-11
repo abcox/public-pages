@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solid Cycles | Custom Motorcycles, Engines, and Fabrication</title>
+    <meta
+      name="description"
+      content="A refreshed Solid Cycles experience featuring custom motorcycles, fabrication, engine and drivetrain builds, and Harley-Davidson service."
+    />
+
+    <meta property="og:title" content="Solid Cycles | Custom Motorcycles" />
+    <meta
+      property="og:description"
+      content="Custom motorcycles, high performance motors, bulletproof 6-speed transmissions, and custom fabrication."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ["Oswald", "sans-serif"],
+              body: ["Space Grotesk", "sans-serif"],
+            },
+            colors: {
+              steel: {
+                900: "#0a0a0a",
+                800: "#121212",
+                700: "#1f1f1f",
+              },
+              ember: {
+                500: "#eb5e28",
+                400: "#f08a5d",
+              },
+              smoke: {
+                200: "#d8d8d8",
+                100: "#efefef",
+              },
+            },
+            boxShadow: {
+              glow: "0 10px 40px rgba(235, 94, 40, 0.25)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .grid-steel {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 700ms ease, transform 700ms ease;
+      }
+
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-steel-900 text-smoke-100 font-body antialiased">
+    <div class="fixed inset-0 -z-20 bg-[radial-gradient(circle_at_20%_10%,rgba(235,94,40,0.16),transparent_34%),radial-gradient(circle_at_80%_20%,rgba(240,138,93,0.14),transparent_40%),linear-gradient(#0a0a0a,#111)]"></div>
+    <div class="fixed inset-0 -z-10 grid-steel opacity-30"></div>
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-black/65 backdrop-blur">
+      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap items-center justify-between gap-3 text-xs uppercase tracking-[0.2em]">
+          <a href="../index.html" class="text-ember-400 hover:text-white">Back to Directory</a>
+          <a href="./report.html" class="text-ember-400 hover:text-white">View Report</a>
+          <a href="#" aria-disabled="true" class="inline-flex cursor-not-allowed items-center rounded-full border border-ember-200/70 bg-ember-300/20 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-ember-100">Buy (Soon)</a>
+        </nav>
+
+        <nav class="mt-3 border-t border-white/10 pt-3">
+          <div class="flex flex-wrap items-center gap-3 text-[11px] uppercase tracking-[0.18em] text-smoke-200/85">
+            <a href="#services" class="hover:text-ember-400">Services</a>
+            <a href="#bikes" class="hover:text-ember-400">Bikes</a>
+            <a href="#fabrication" class="hover:text-ember-400">Fabrication</a>
+            <a href="#frank" class="hover:text-ember-400">Frank</a>
+            <a href="#links" class="hover:text-ember-400">Partners</a>
+            <a href="#contact" class="hover:text-ember-400">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:px-8 lg:py-24">
+        <div class="reveal lg:col-span-7">
+          <p class="mb-4 inline-flex items-center rounded-full border border-ember-500/40 bg-ember-500/10 px-4 py-1 text-xs uppercase tracking-[0.2em] text-ember-400">
+            High Horsepower. Bulletproof Drivetrain.
+          </p>
+          <h1 class="font-heading text-5xl uppercase leading-[0.95] tracking-wide sm:text-6xl lg:text-7xl">
+            CUSTOM AMERICAN
+            <span class="text-ember-400">V-TWIN</span>
+            BUILDS
+          </h1>
+          <p class="mt-6 max-w-2xl text-base text-smoke-200/90 sm:text-lg">
+            Solid Cycles specializes in engine and drivetrain performance, custom fabrication,
+            and Harley-Davidson service. Built with American-made components and over 30 years
+            of hands-on experience.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#contact" class="rounded-full bg-ember-500 px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] text-black shadow-glow">Get Pricing</a>
+            <a href="#bikes" class="rounded-full border border-white/20 px-6 py-3 text-xs font-bold uppercase tracking-[0.2em] hover:border-ember-500">View Builds</a>
+          </div>
+        </div>
+
+        <div class="reveal relative lg:col-span-5">
+          <div class="absolute -inset-4 -z-10 rounded-3xl bg-ember-500/10 blur-2xl"></div>
+          <img
+            src="https://solidcycles.com/uploads/3/4/2/4/34241548/5562995.jpg?247"
+            alt="Motor build"
+            class="h-full min-h-[320px] w-full rounded-3xl object-cover ring-1 ring-white/10"
+          />
+        </div>
+      </section>
+
+      <section id="services" class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8 lg:pb-20">
+        <div class="reveal mb-8 flex items-end justify-between">
+          <div>
+            <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Core Services</p>
+            <h2 class="font-heading text-4xl uppercase tracking-wide">What We Do</h2>
+          </div>
+          <p class="hidden max-w-md text-sm text-smoke-200/75 md:block">Fast turnarounds, durable parts, and practical custom work with clean fitment.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-heading text-2xl uppercase">Engine &amp; Drivetrain</h3>
+            <p class="mt-3 text-sm text-smoke-200/80">
+              Reliable high horsepower and high torque motors, plus robust 6-speed transmission builds
+              for demanding street and custom applications.
+            </p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-heading text-2xl uppercase">Harley Service</h3>
+            <p class="mt-3 text-sm text-smoke-200/80">
+              Affordable scheduled maintenance and repairs for Harley-Davidson and American V-Twins,
+              backed by decades of workshop experience.
+            </p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h3 class="font-heading text-2xl uppercase">Custom Fabrication</h3>
+            <p class="mt-3 text-sm text-smoke-200/80">
+              Billet aluminum components, wheel lacing, fenders, seat pans, and precision fittings
+              designed for clean lines and solid performance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="bikes" class="border-y border-white/10 bg-black/35 py-14">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="reveal mb-8 flex flex-wrap items-center justify-between gap-4">
+            <h2 class="font-heading text-4xl uppercase tracking-wide">Featured Builds</h2>
+            <div class="flex gap-2">
+              <button data-filter="all" class="filter-btn rounded-full border border-ember-500 bg-ember-500/20 px-4 py-2 text-xs uppercase tracking-wider">All</button>
+              <button data-filter="blackout" class="filter-btn rounded-full border border-white/25 px-4 py-2 text-xs uppercase tracking-wider">Blackout</button>
+              <button data-filter="chrome" class="filter-btn rounded-full border border-white/25 px-4 py-2 text-xs uppercase tracking-wider">Chrome</button>
+            </div>
+          </div>
+
+          <div id="bikeGrid" class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <button data-tag="blackout" class="bike-card reveal overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-left">
+              <img src="https://solidcycles.com/uploads/3/4/2/4/34241548/1526414_orig.jpg" alt="Custom bike build" class="h-52 w-full object-cover" />
+              <div class="p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Blackout</p>
+                <h3 class="font-heading text-2xl uppercase">Street Crusher</h3>
+              </div>
+            </button>
+
+            <button data-tag="chrome" class="bike-card reveal overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-left">
+              <img src="https://solidcycles.com/uploads/3/4/2/4/34241548/5427742_orig.jpg" alt="Custom bike with chrome accents" class="h-52 w-full object-cover" />
+              <div class="p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Chrome</p>
+                <h3 class="font-heading text-2xl uppercase">Road Titan</h3>
+              </div>
+            </button>
+
+            <button data-tag="blackout" class="bike-card reveal overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-left">
+              <img src="https://solidcycles.com/uploads/3/4/2/4/34241548/6423780_orig.jpg" alt="Minimal black custom build" class="h-52 w-full object-cover" />
+              <div class="p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Blackout</p>
+                <h3 class="font-heading text-2xl uppercase">Alley Ghost</h3>
+              </div>
+            </button>
+
+            <button data-tag="chrome" class="bike-card reveal overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-left">
+              <img src="https://solidcycles.com/uploads/3/4/2/4/34241548/1551089_orig.jpg" alt="Classic style custom motorcycle" class="h-52 w-full object-cover" />
+              <div class="p-4">
+                <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Chrome</p>
+                <h3 class="font-heading text-2xl uppercase">Classic Fury</h3>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="fabrication" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div class="reveal mb-10">
+          <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Fabrication Highlights</p>
+          <h2 class="font-heading text-4xl uppercase tracking-wide">Custom Fittings</h2>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-heading text-2xl uppercase">Ignition Switch</h3>
+            <p class="mt-2 text-sm text-smoke-200/80">Marine-style key switch with OFF, RUN, and spring-loaded START. Old school feel with clean mounting.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-heading text-2xl uppercase">200mm Tire Fit</h3>
+            <p class="mt-2 text-sm text-smoke-200/80">Wide tire custom fitment using stock HD swingarm geometry for a solid stance and practical savings.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-heading text-2xl uppercase">Billet Front Ends</h3>
+            <p class="mt-2 text-sm text-smoke-200/80">1 1/4" billet triple trees and 41mm HD fork assemblies, machined for durable precision fit.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-heading text-2xl uppercase">Custom Laced Wheels</h3>
+            <p class="mt-2 text-sm text-smoke-200/80">Hubs laced to multiple rim sizes with spoke style options and optional custom finishes.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-heading text-2xl uppercase">Seat Pans &amp; Brackets</h3>
+            <p class="mt-2 text-sm text-smoke-200/80">Fabricated to bike-specific dimensions with optional custom upholstery support.</p>
+          </article>
+
+          <article class="reveal rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="font-heading text-2xl uppercase">Flush Front Axles</h3>
+            <p class="mt-2 text-sm text-smoke-200/80">316 stainless steel axles machined to fit Harley front ends for a clean, uninterrupted look.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="frank" class="border-y border-white/10 bg-black/40 py-14">
+        <div class="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+          <div class="reveal lg:col-span-4">
+            <img
+              src="https://solidcycles.com/uploads/3/4/2/4/34241548/5712306.png?502"
+              alt="Frank Jezek"
+              class="h-full min-h-[300px] w-full rounded-3xl object-cover ring-1 ring-white/10"
+            />
+          </div>
+
+          <div class="reveal lg:col-span-8">
+            <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Builder Story</p>
+            <h2 class="mt-2 font-heading text-4xl uppercase tracking-wide">Frank Jezek</h2>
+            <p class="mt-5 max-w-3xl text-sm leading-relaxed text-smoke-200/90 sm:text-base">
+              Frank has been on two wheels since childhood and has spent over three decades
+              rebuilding motors and transmissions, welding frames, and fine-tuning custom bikes.
+              His approach stays consistent: clean, simple, functional builds with serious motor
+              and drivetrain performance.
+            </p>
+            <blockquote class="mt-6 border-l-4 border-ember-500 pl-4 font-heading text-2xl uppercase leading-tight text-smoke-100">
+              Less Is More:
+              <span class="block text-ember-400">Clean, Simple, Any Shade of Black.</span>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="links" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <div class="reveal mb-8">
+          <p class="text-xs uppercase tracking-[0.2em] text-ember-400">Authorized Dealer Network</p>
+          <h2 class="font-heading text-4xl uppercase tracking-wide">Trusted Brands</h2>
+        </div>
+
+        <div class="reveal grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.jimsusa.com/" target="_blank" rel="noreferrer">JIMS USA</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.sscycle.com/" target="_blank" rel="noreferrer">S&amp;S Cycle</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.jbrake.com/" target="_blank" rel="noreferrer">JayBrake</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.mid-usa.ca/" target="_blank" rel="noreferrer">Mid-USA</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.vtwinmfg.com/" target="_blank" rel="noreferrer">V-Twin MFG</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.riveraprimoinc.com/" target="_blank" rel="noreferrer">Rivera Primo</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.motovan.com/" target="_blank" rel="noreferrer">Motovan</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.exilecycles.com/" target="_blank" rel="noreferrer">Exile Cycles</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.midwestmc.net/" target="_blank" rel="noreferrer">Midwest Motorcycle</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.fullboremarketing.ca/" target="_blank" rel="noreferrer">FullBore Marketing</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.hawghalters.com/" target="_blank" rel="noreferrer">Hawg Halters</a>
+          <a class="rounded-xl border border-white/15 bg-white/5 px-4 py-3 hover:border-ember-500" href="http://www.427autocollision.com/" target="_blank" rel="noreferrer">427 Auto Collision</a>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
+        <div class="reveal overflow-hidden rounded-3xl border border-ember-500/40 bg-gradient-to-r from-ember-500/20 via-ember-500/5 to-transparent p-8 sm:p-10">
+          <p class="text-xs uppercase tracking-[0.2em] text-ember-400">For Information and Prices</p>
+          <h2 class="mt-2 font-heading text-4xl uppercase tracking-wide">Contact Frank Jezek</h2>
+          <div class="mt-5 flex flex-wrap items-center gap-4 text-sm sm:text-base">
+            <a href="tel:+14165803161" class="rounded-full bg-ember-500 px-5 py-3 text-xs font-bold uppercase tracking-[0.2em] text-black">+1 (416) 580-3161</a>
+            <a href="mailto:FRANK@SOLIDCYCLES.COM" class="rounded-full border border-white/25 px-5 py-3 text-xs font-bold uppercase tracking-[0.2em] hover:border-ember-500">FRANK@SOLIDCYCLES.COM</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/60">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-6 text-xs text-smoke-200/70 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <p>© <span id="year"></span> Solid Cycles. Refreshed concept experience.</p>
+        <p>Built as a responsive Tailwind HTML prototype.</p>
+      </div>
+    </footer>
+
+    <dialog id="bikeDialog" class="w-[92vw] max-w-3xl rounded-2xl border border-white/20 bg-steel-800 p-0 text-smoke-100 backdrop:bg-black/70">
+      <div class="relative">
+        <button id="closeDialog" class="absolute right-3 top-3 z-10 rounded-full bg-black/60 px-3 py-1 text-xs uppercase tracking-wider">Close</button>
+        <img id="dialogImg" src="" alt="Selected bike" class="max-h-[72vh] w-full object-cover" />
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
